@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Button from './components/Button';
 function App() {
+
   return (
     <div className="App">
       {/* button的demo演示 */}
@@ -17,6 +18,9 @@ function App() {
       <Button
         size='sm'
         btnType='default'
+      >default</Button>
+      <Button
+       onClick={(e)=>{e.preventDefault();alert(123)}}
       >default</Button>
       <Button
         size='lg'

@@ -16,8 +16,11 @@ interface BaseButtonProps{
     href?: string;
 }
 
+//联合类型是A or B  ｜，交叉类型是把多个类型叠加为一个类型
 type NativeButtonProps = BaseButtonProps & ButtonHTMLAttributes<HTMLElement>
+//A标签
 type AnchorButtonProps = BaseButtonProps & AnchorHTMLAttributes<HTMLElement>
+// partial把两个都设为可选的 
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
 
 export const Button:FC<ButtonProps>=(props)=>{
@@ -29,6 +32,7 @@ export const Button:FC<ButtonProps>=(props)=>{
         children,
         href,
         ...restProps
+        //restProps包含了 a标签和button标签内的所有属性
       } = props
        // btn, btn-lg, btn-primary
   const classes = classNames('btn', className, {
