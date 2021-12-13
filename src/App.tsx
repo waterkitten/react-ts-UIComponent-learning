@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Button from './components/Button';
+import Menu from './components/Menu/menu';
+import MenuItem from './components/Menu/menuItem';
 function App() {
 
   return (
@@ -28,6 +30,11 @@ function App() {
         href='https://zh-hans.reactjs.org/docs/create-a-new-react-app.html'
       >default link</Button>
       <div>22</div>
+      <Menu>
+        <MenuItem>11</MenuItem>
+        <MenuItem>11</MenuItem>
+        <MenuItem>11</MenuItem>
+      </Menu>
     </div>
   );
 }
