@@ -30,10 +30,10 @@ function App() {
         href='https://zh-hans.reactjs.org/docs/create-a-new-react-app.html'
       >default link</Button>
       <div>22</div>
-      <Menu>
-        <MenuItem>11</MenuItem>
-        <MenuItem>11</MenuItem>
-        <MenuItem>11</MenuItem>
+      <Menu defaultIndex={0} onSelect={(idx)=>{alert(idx)}}>
+        <MenuItem index={0}> 11</MenuItem>
+        <MenuItem index={1}>11</MenuItem>
+        <MenuItem index={2}>11</MenuItem>
       </Menu>
     </div>
   );
