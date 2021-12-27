@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
 import Button from './components/Button';
+import MenuDemo from './demos/menu-demo'
 function App() {
 
   return (
     <div className="App">
+      <MenuDemo></MenuDemo>
       {/* button的demo演示 */}
       <Button
         size='lg'
