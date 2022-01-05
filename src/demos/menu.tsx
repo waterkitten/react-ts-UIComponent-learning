@@ -24,6 +24,24 @@ function MenuDemo() {
           cool link 3
         </MenuItem>
       </Menu>
+      <Menu defaultIndex='0' mode="horizontal" onSelect={(index) => { alert(index) }}>
+        <MenuItem>title one</MenuItem>
+        <MenuItem disabled>disabled link</MenuItem>
+        <MenuItem>
+          <a href="http://www.baidu.com">Baidu!</a>
+        </MenuItem>
+        <SubMenu title='dropdown'>
+          <MenuItem>
+            dropdown 1
+          </MenuItem>
+          <MenuItem>
+            dropdown 2
+          </MenuItem>
+        </SubMenu>
+        <MenuItem>
+          cool link 3
+        </MenuItem>
+      </Menu>
     </>
   )
 }
